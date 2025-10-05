@@ -1,22 +1,19 @@
 import React, { use } from "react";
-
+import { FaRegStarHalfStroke } from "react-icons/fa6";
 const Book = ({ bookPromise }) => {
   const datas = use(bookPromise);
   console.log(datas);
   return (
-    <div>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
       {datas.map((data, bookId) => (
         <div key={bookId}>
-          <div className="card bg-base-100 w-96 shadow-sm">
-            <figure>
-              <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                alt="Shoes"
-              />
+          <div className="card bg-base-100 w-96 shadow-sm border p-4">
+            <figure className="p-4 bg-gray-100 w-2/3 mx-auto">
+              <img className="h-[166px]" src={data.image} alt="Shoes" />
             </figure>
             <div className="card-body">
               <h2 className="card-title">
-                Card Title
+                {data.bookName}
                 <div className="badge badge-secondary">NEW</div>
               </h2>
               <p>
@@ -24,8 +21,10 @@ const Book = ({ bookPromise }) => {
                 there are title and actions parts
               </p>
               <div className="card-actions justify-end">
-                <div className="badge badge-outline">Fashion</div>
-                <div className="badge badge-outline">Products</div>
+                <div className="badge badge-outline">{data.category}</div>
+                <div className="badge badge-outline">
+                  {data.rating} <FaRegStarHalfStroke />
+                </div>
               </div>
             </div>
           </div>

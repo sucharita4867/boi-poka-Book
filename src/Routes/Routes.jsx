@@ -13,6 +13,10 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
+        loader: () =>
+          fetch(
+            "https://raw.githubusercontent.com/ProgrammingHero1/boi-poka-Book-Vibe-Resources/refs/heads/main/data/booksData.json"
+          ),
         path: "/",
         Component: Home,
       },

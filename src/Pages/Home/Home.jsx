@@ -1,7 +1,17 @@
 import React from "react";
+import Banner from "../../Components/Banner/Banner";
+import Books from "../Books/Books";
+// import { useLoaderData } from "react-router";
 
 const Home = () => {
-  return <div>Hey I am Home</div>;
+  // const data = useLoaderData();
+  // console.log(data);
+  return (
+    <div>
+      <Banner></Banner>
+      <Books></Books>
+    </div>
+  );
 };
 
 export default Home;

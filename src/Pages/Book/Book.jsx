@@ -12,7 +12,6 @@ const Book = ({ bookPromise }) => {
               <img className="h-[166px]" src={data.image} alt="Shoes" />
             </figure>
             <div className="card-body">
-              {/* <p className="flex justify-center border ">{data.tags}</p> */}
               <div className="flex justify-center items-center gap-8">
                 {data.tags.map((tag) => (
                   <p>{tag}</p>
@@ -20,12 +19,11 @@ const Book = ({ bookPromise }) => {
               </div>
               <h2 className="card-title">
                 {data.bookName}
-                <div className="badge badge-secondary">NEW</div>
+                <div className="badge badge-secondary">
+                  {data.yearOfPublishing}
+                </div>
               </h2>
-              <p>
-                A card component has a figure, a body part, and inside body
-                there are title and actions parts
-              </p>
+              <p>Book By : {data.publisher}</p>
               <div className="card-actions justify-end">
                 <div className="badge badge-outline">{data.category}</div>
                 <div className="badge badge-outline">

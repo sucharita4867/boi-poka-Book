@@ -24,6 +24,7 @@ const Book = ({ bookPromise }) => {
                 </div>
               </h2>
               <p>Book By : {data.publisher}</p>
+              <div className="border-t-1 border-dashed"></div>
               <div className="card-actions justify-end">
                 <div className="badge badge-outline">{data.category}</div>
                 <div className="badge badge-outline">

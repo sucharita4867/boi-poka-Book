@@ -7,11 +7,17 @@ const Book = ({ bookPromise }) => {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
       {datas.map((data, bookId) => (
         <div key={bookId}>
-          <div className="card bg-base-100 w-96 shadow-sm border p-4">
+          <div className="card bg-base-100 w-85 shadow-xl border p-4 ">
             <figure className="p-4 bg-gray-100 w-2/3 mx-auto">
               <img className="h-[166px]" src={data.image} alt="Shoes" />
             </figure>
             <div className="card-body">
+              {/* <p className="flex justify-center border ">{data.tags}</p> */}
+              <div className="flex justify-center items-center gap-8">
+                {data.tags.map((tag) => (
+                  <p>{tag}</p>
+                ))}
+              </div>
               <h2 className="card-title">
                 {data.bookName}
                 <div className="badge badge-secondary">NEW</div>

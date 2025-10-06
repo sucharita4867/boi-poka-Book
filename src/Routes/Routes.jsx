@@ -5,6 +5,7 @@ import Root from "../Pages/Root/Root";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
 import About from "../Pages/About/About";
+import BookDetails from "../Pages/BookDetails/BookDetails";
 
 export const router = createBrowserRouter([
   {
@@ -24,6 +25,16 @@ export const router = createBrowserRouter([
       {
         path: "/About",
         Component: About,
+      },
+      {
+        path: "/bookDetails/:id",
+        Component: BookDetails,
+        loader: async () => {
+          const res = await fetch(
+            "https://raw.githubusercontent.com/ProgrammingHero1/boi-poka-Book-Vibe-Resources/refs/heads/main/data/booksData.json"
+          );
+          return res.json();
+        },
       },
     ],
   },

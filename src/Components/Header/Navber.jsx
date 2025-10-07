@@ -10,6 +10,9 @@ const Navber = () => {
       <Link to={"/about"}>
         <li className="mr-2">About</li>
       </Link>
+      <Link to={"/about"}>
+        <li className="mr-2">ReadList</li>
+      </Link>
     </>
   );
   return (

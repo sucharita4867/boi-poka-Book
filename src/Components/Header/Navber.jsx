@@ -10,7 +10,7 @@ const Navber = () => {
       <Link to={"/about"}>
         <li className="mr-2">About</li>
       </Link>
-      <Link to={"/about"}>
+      <Link to={"/readList"}>
         <li className="mr-2">ReadList</li>
       </Link>
     </>

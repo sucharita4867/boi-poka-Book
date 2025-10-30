@@ -1,7 +1,12 @@
 import React from "react";
 
 const About = () => {
-  return <div>hello i am about</div>;
+  return (
+    <div>
+      <title>BoiPoka-About</title>
+      <h1>hello i am about</h1>
+    </div>
+  );
 };
 
 export default About;

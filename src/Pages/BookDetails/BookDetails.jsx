@@ -17,6 +17,9 @@ const BookDetails = () => {
 
   return (
     <div className="w-2/3 mx-auto">
+      <title>{bookName}</title>
+      <meta name="description" content="A website about books and reading." />
+      <meta name="keywords" content="books, reading, library, novel" />
       <img className="w-48" src={image} alt="" />
       <h1>{bookName}</h1>
       <button

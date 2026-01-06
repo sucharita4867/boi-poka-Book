@@ -32,15 +32,6 @@ const About = () => {
         <li>User-friendly design for all devices</li>
       </ul>
 
-      <h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-800">
-        🛠 Technologies Used
-      </h2>
-
-      <p className="text-gray-700">
-        React.js, JavaScript, HTML, CSS, and modern frontend tools were used to
-        build this application.
-      </p>
-
       <p className="text-center mt-10 text-gray-500">
         Made with ❤️ by a passionate web developer
       </p>

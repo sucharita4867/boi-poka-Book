@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div>
       <title>BoiPoka-About</title>
-      <h1>hello i am about</h1>
+      <p>this is book about page</p>
     </div>
   );
 };

@@ -35,10 +35,6 @@ const About = () => {
       <p className="text-center mt-10 text-gray-500">
         Made with ❤️ by a passionate web developer
       </p>
-
-      <p className="text-center mt-10 text-gray-500">
-        Made with ❤️ by a passionate web developer
-      </p>
     </div>
   );
 };
